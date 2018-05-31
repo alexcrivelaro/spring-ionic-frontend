@@ -22,7 +22,7 @@ export class AuthInterceptor implements HttpInterceptor {
             return next.handle(authReq);
         }
         else {
-            return next.handle(req)
+            return next.handle(req);
         }
     }
 }
