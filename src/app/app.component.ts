@@ -19,15 +19,17 @@ export class MyApp {
     public statusBar: StatusBar, 
     public splashScreen: SplashScreen,
     public auth: AuthService
-    ) {
+  ) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Profile', component: 'ProfilePage' },
       { title: 'Categorias', component: 'CategoriasPage' },
-      { title: 'Logout', component: '' }
+      { title: 'Carrinho', component: 'CartPage'},
+      { title: 'Logout', component: ''}
     ];
+
   }
 
   initializeApp() {
